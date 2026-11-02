@@ -8,15 +8,28 @@
 
     <script src="./scripts/templates.js"></script>
     <script src="./scripts/notes.js"></script>
+
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body onload="renderNotes()">
     <h1>Notizblock</h1>
+
+    <label for="titleInput">title:</label>
+    <input type="text" id="titleInput">
+
+    <label for="noteInput">content:</label>
     <input type="text" id="noteInput">
+
     <button onclick="addNote()">Notiz speichern</button>
 
     <h2>Notes</h2>
     <div id="content">
+
+    </div>
+
+    <h2>Archive</h2>
+    <div id="archiveContent">
 
     </div>
 
